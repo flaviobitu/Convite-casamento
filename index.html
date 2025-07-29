@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Larissa & Flávio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      text-align: center;
+      background-size: cover;
+      background: url('https://raw.githubusercontent.com/flaviobitu/Convite-casamento/main/casapraia.jpeg') no-repeat center center fixed;
+      color: #881717;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 70vh;
+    }
+
+    
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0;
+    }
+
+    .date {
+      font-size: 1.9rem;
+      color: #881717;
+      margin: 8px 0 24px 0;
+    }
+
+    button {
+      background-color: #e35257;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 12px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #ad4609;
+    }
+
+    a button {
+      text-decoration: none;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+
+    .section {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Larissa & Flávio</h1>
+    <p>JUNTAMENTE COM SEUS PAIS O CONVIDAM PARA O SEU CASAMENTO!</p>
+    <p>📍 Casa de Praia da Família Gueiros, Rua Sudão, 8905 – Paulista – PE</p>
+
+    <div class="section">
+      <h3>Presentear com Pix</h3>
+      <p>Chave Pix: <strong>21968979000</strong></p>
+      <button onclick="copiarPix()">Copiar Chave Pix</button>
+    </div>
+
+    <div class="section">
+      <h3>Confirmar presença</h3>
+      <a href="https://chat.whatsapp.com/SEU-LINK-AQUI" target="_blank">
+        <button>Entrar no grupo</button>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    function copiarPix() {
+      navigator.clipboard.writeText('flavioelarissa@pix.com');
+      alert('Chave Pix copiada para a área de transferência!');
+    }
+  </script>
+</body>
+</html>
