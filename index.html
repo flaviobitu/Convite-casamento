@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Larissa & Flávio</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: url('https://raw.githubusercontent.com/flaviobitu/Convite-casamento/main/casanova12.jpg') no-repeat center center;
+      background-size: cover;
+      color: #005001;
+      background-color: rgba(255, 255, 255, 0.6);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 0vh;
+      padding: 40px 20px;
+      font-family: 'Courier New', monospace;
+    }
+
+    .conteudo {
+      text-align: center;
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.4);
+      max-width: 600px;
+      width: 90%;
+      margin: 20px auto;
+      border-radius: 50px;
+    }
+
+    h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 3.7rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      margin: 6px 0;
+      line-height: 1.2;
+    }
+
+    .date {
+      font-size: 1.9rem;
+      color: #003f01;
+      margin: 8px 0 24px 0;
+    }
+
+    .section {
+      margin-top: 30px;
+    }
+
+    .botoes-area {
+      margin-top: 35px;
+      padding-top: 20px;
+      border-top: 1px solid #003f01;
+    }
+
+    .botoes-area h4 {
+      margin-bottom: 5px;
+    }
+
+    button {
+      background-color: #81b360;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      margin: 8px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #003f01;
+    }
+
+    a button {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="conteudo">
+    <img src="LogoLeF.png" alt="Logo Casamento" style="width: 120px; margin-bottom: 0px;">
+    <h1>Larissa e Flávio</h1>
+    <p>.</p>
+    <p>JUNTAMENTE COM SEUS PAIS,
+TÊM A ALEGRIA DE CONVIDAR VOCÊ PARA CELEBRAR O AMOR E A UNIÃO DE SUAS VIDAS.
+COM GRATIDÃO A DEUS E AOS QUE CAMINHAM AO NOSSO LADO,
+O CONVIDAMOS PARA O NOSSO CASAMENTO.</p>
+
+    <div class="botoes-area">
+      
+       <h5><strong>PARA MAIS INFORMAÇÕES, BAIXE SEU CONVITE DIGITAL<br>QUE FIZEMOS ESPECIALMENTE PRA VOCÊ.<br></strong></h5>
+        <a href="https://raw.githubusercontent.com/flaviobitu/Convite-casamento/main/convite.pdf" download>
+          <button><i class="fas fa-download"></i> Baixar seu convite</button>
+        </a>
+      
+      <h5><strong>ATENÇÃO, CONFIRME SUA PRESENÇA ATÉ O DIA 30/08<br>PARA PARTICIPAR CONOSCO DESTE MOMENTO.</strong></h5>
+        <a href="https://chat.whatsapp.com/C6rwU3OLgLY2C9RYE23Oyv?mode=ac_t" target="_blank">
+          <button><i class="fab fa-whatsapp"></i> Confirmar presença</button>
+        </a>
+ 
+        <h5><strong>TEMOS UMA LISTA DE PRESENTES, CASO QUERIA, NOS<br>PRESENTEIE COM UM DOS ITENS DA LISTA.</strong></h5>
+         <a href="https://raw.githubusercontent.com/flaviobitu/Convite-casamento/main/lista-de-presentes.pdf" download>
+          <button><i class="fas fa-gift"></i> Ver lista de presentes</button>
+        </a>
+
+      <h5><strong>SE PREFERIR, PRESENTEIE-NOS COM PIX<br>CHAVE PIX: flavioelarissa.wedding@gmail.com</strong></h5>
+        <button onclick="copiarPix()"><i class="fas fa-university"></i> Copiar chave pix</button>
+      
+    </div>
+  </div>
+
+  <script>
+    function copiarPix() {
+      navigator.clipboard.writeText('flavioelarissa.wedding@gmail.com');
+      alert('Chave Pix copiada para a área de transferência.\n\nLembre-se: Deus não olha para a quantidade do valor doado; Ele se agrada da disposição do coração do doador. Que Deus lhe abençoe!');
+    
+    }
+  </script>
+</body>
+</html>
