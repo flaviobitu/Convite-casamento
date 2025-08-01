@@ -135,17 +135,19 @@ O CONVIDAMOS PARA O NOSSO CASAMENTO.</p>
   const params = new URLSearchParams(window.location.search);
   const nome = params.get("convidado");
 
-  // Liste aqui os nomes dos arquivos PDF (sem .pdf)
-  const nomesValidos = ["victorximenes", ];
+  // Lista de nomes válidos
+  const nomesValidos = ["victorximenes", "nomes dos próximos" ]; // mantenha atualizado
 
   if (nome && nomesValidos.includes(nome)) {
-    const linkPDF = `https://raw.githubusercontent.com/flaviobitu/Convite-casamento/main/Convite/${victorximenes}.pdf`;
+    const linkPDF = `https://raw.githubusercontent.com/flaviobitu/Convite-casamento/main/Convite/${nome}.pdf`;
     const botao = document.getElementById("botao-convite");
     botao.href = linkPDF;
+    botao.target = "_blank";
     botao.style.display = "inline-block";
   } else {
     document.getElementById("mensagem-erro").style.display = "block";
   }
 </script>
+
 </body>
 </html>
