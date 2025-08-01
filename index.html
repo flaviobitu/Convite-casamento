@@ -111,7 +111,7 @@ O CONVIDAMOS PARA O NOSSO CASAMENTO.</p>
         </a>
  
         <h5><strong>TEMOS UMA LISTA DE PRESENTES, CASO QUERIA, NOS<br>PRESENTEIE COM UM DOS ITENS DA LISTA.</strong></h5>
-         <a href="https://raw.githubusercontent.com/flaviobitu/Convite-casamento/main/lista-de-presentes.pdf" download>
+         <a href="https://raw.githubusercontent.com/flaviobitu/Convite-casamento/main/listapresentes.pdf" download>
           <button><i class="fas fa-gift"></i> Ver lista de presentes</button>
         </a>
 
@@ -133,7 +133,7 @@ O CONVIDAMOS PARA O NOSSO CASAMENTO.</p>
   const nome = params.get("convidado");
 
   // Liste aqui os nomes dos arquivos PDF (sem .pdf)
-  const nomesValidos = ["victorximenes", "larissa", "maria"];
+  const nomesValidos = ["victorximenes", ];
 
   if (nome && nomesValidos.includes(nome)) {
     const linkPDF = `https://raw.githubusercontent.com/flaviobitu/Convite-casamento/main/Convite/${victorximenes}.pdf`;
@@ -144,7 +144,5 @@ O CONVIDAMOS PARA O NOSSO CASAMENTO.</p>
     document.getElementById("mensagem-erro").style.display = "block";
   }
 </script>
-
-
 </body>
 </html>
