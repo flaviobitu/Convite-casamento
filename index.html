@@ -97,9 +97,13 @@ O CONVIDAMOS PARA O NOSSO CASAMENTO.</p>
     <div class="botoes-area">
       
        <h5><strong>PARA MAIS INFORMAÇÕES, BAIXE SEU CONVITE DIGITAL<br>QUE FIZEMOS ESPECIALMENTE PRA VOCÊ.<br></strong></h5>
-        <a href="https://raw.githubusercontent.com/flaviobitu/Convite-casamento/main/convite.pdf" download>
-          <button><i class="fas fa-download"></i> Baixar seu convite</button>
+        <a id="botao-convite" href="#" target="_blank" style="display: none;">
+          <button><i class="fas fa-file-pdf"></i> Ver seu convite</button>
         </a>
+        <p id="mensagem-erro" style="display: none; color: red;">
+        Convite não encontrado. Verifique o link enviado.
+        </p>
+
       
       <h5><strong>ATENÇÃO, CONFIRME SUA PRESENÇA ATÉ O DIA 30/08<br>PARA PARTICIPAR CONOSCO DESTE MOMENTO.</strong></h5>
         <a href="https://chat.whatsapp.com/C6rwU3OLgLY2C9RYE23Oyv?mode=ac_t" target="_blank">
@@ -111,8 +115,8 @@ O CONVIDAMOS PARA O NOSSO CASAMENTO.</p>
           <button><i class="fas fa-gift"></i> Ver lista de presentes</button>
         </a>
 
-      <h5><strong>SE PREFERIR, PRESENTEIE-NOS COM PIX.<br>CHAVE PIX: flavioelarissa.wedding@gmail.com</strong></h5>
-        <button onclick="copiarPix()"><i class="fas fa-university"></i> Copiar chave pix</button>
+      <h5><strong>SE PREFERIR, PRESENTEIE-NOS COM PIX<br>CHAVE PIX: flavioelarissa.wedding@gmail.com</strong></h5>
+        <button onclick="copiarPix()"><i class="fas fa-university"></i>Copiar chave pix</button>
       
     </div>
   </div>
@@ -124,5 +128,23 @@ O CONVIDAMOS PARA O NOSSO CASAMENTO.</p>
     
     }
   </script>
+  <script>
+  const params = new URLSearchParams(window.location.search);
+  const nome = params.get("convidado");
+
+  // Liste aqui os nomes dos arquivos PDF (sem .pdf)
+  const nomesValidos = ["victorximenes", "larissa", "maria"];
+
+  if (nome && nomesValidos.includes(nome)) {
+    const linkPDF = `https://raw.githubusercontent.com/flaviobitu/Convite-casamento/main/Convite/${victorximenes}.pdf`;
+    const botao = document.getElementById("botao-convite");
+    botao.href = linkPDF;
+    botao.style.display = "inline-block";
+  } else {
+    document.getElementById("mensagem-erro").style.display = "block";
+  }
+</script>
+
+
 </body>
 </html>
