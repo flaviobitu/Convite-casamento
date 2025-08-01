@@ -136,13 +136,12 @@ O CONVIDAMOS PARA O NOSSO CASAMENTO.</p>
   const nome = params.get("convidado");
 
   // Lista de nomes válidos
-  const nomesValidos = ["dudaerafael", "robsoncorreia", "tacianaregis", "giovanabrito", "silvanaegabrielaguimaraes","aydaelucasratola","fernandesemiriamcortial",
-                       "ivoeamanda","angeloeraquel","deboragallo1","danielegallo","rafaelamorim","revlutero","geneton","urbanovitalino","carolinavitalino",
-                        "fernandotrajano","marcosgueiros","marcosgueirosfilho","fabiomedeirosefamilia","pedrogueiros","ebenezergueiros","miriamgueirosecleidegueiros",
-                        "suhaylaallouchie","normaamorim","orchideiaamorim","robertoamorim","renatoamorim","thaiscorreia","genycorreia",]; // mantenha atualizado
-
-  if (nome && nomesValidos.includes(nome)) {
-    const linkPDF = `https://raw.githubusercontent.com/flaviobitu/Convite-casamento/main/Convite/${nome}.pdf`;
+  const convites = {
+    "dudaerafael":"https://drive.google.com/file/d/1jfr1wG-L-_5aPoFf_b5RjC8GFe0FcVxf/view?usp=drive_link",
+  };
+    
+    if (nome && convites[nome]) {
+    const linkPDF = convites[nome];
     const botao = document.getElementById("botao-convite");
     botao.href = linkPDF;
     botao.target = "_blank";
